@@ -1,0 +1,39 @@
+<!-- প্রাকটিস প্রব্লেম 
+
+একটা ওয়েবসাইট এ একটা input ফিল্ড থাকবে। তার সাথে একটা বাটন থাকবে double নামে। তুমি ইনপুট ফিল্ড এ যদি কোন সংখ্যা লিখো তাহলে নিচে সেই সংখ্যা ডাবল করে দেখাবে। আরেকটা বাটন থাকবে triple নামে। সেটাতে ক্লিক করলে ইনপুট ফিল্ড এ যে সংখ্যা আছে সেটা তিনগুণ হয়ে যাবে। সেই সংখ্যা নিচে দেখাবে। আর যদি ইনপুট ফিল্ড এ সংখ্যা ছাড়া কোন কথা লিখে তাহলে একটা এলার্ট (alert) দিয়ে বলবে Please enter a number। এলার্ট ক্যামনে দেয় সেটা নিয়ে বিস্তারিত অনেকদিন পরে আমরা ই দেখায় দিবো। আপাতত দেখো গুগলে সার্চ দিয়ে কিছু বের করতে পারো কিনা। -->
+
+
+<!DOCTYPE html>
+<html lang="en" data-theme="retro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Problem</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div>
+        <h1 class="text-5xl font-semibold text-center text-fuchsia-700 mb-10 mt-12">Lets play with double and tripple</h1>
+        <h2 class="text-4xl font-semibold text-red-400 text text-center">Please input your number and <br> choose what to do</h2>
+    </div>
+    <section class="max-w-screen-2xl mx-auto w-2/5 " >
+        <div class="bg-cyan-600 h-72 mt-16 rounded-xl">
+            <div class="py-12 px-40">
+                <input id="user-input" class="block text-center rounded-md bg-cyan-100 py-3 px-16 " type="text" placeholder="Please Input Your Number">
+            </div>
+            <button id="btn-double" class="btn btn-active btn-primary ml-52 mr-10 text-white">Double</button>
+            <button id="btn-tripple" class="btn btn-active btn-secondary text-white">Tripple</button>
+            <div class="flex justify-center">
+                <button id="reset" class="btn btn-error text-white block mt-6">Reset All</button>
+            </div>
+        </div>
+        <div class="bg-green-500 h-32 rounded-xl mt-8 ">
+            <h1 class="text-3xl font-semibold text-center text-pink-500 pt-4">Your Output Is : </h1>
+            <p id="output-display" class="text-4xl text-center text-indigo-700 mt-4">0</p>
+        </div>
+    </section>
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
